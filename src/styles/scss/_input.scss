@@ -1,0 +1,44 @@
+
+.Input{
+    background-color: var(--white);
+    margin: 2em 1em ;
+    border-radius: 8px;
+    display: flex;
+    padding: .5em;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: left;
+    box-shadow: 0px 0px 11px 1px var(--shadow);
+    img{
+        margin: 0 1em 0 2em;
+
+    }
+    input{
+        border: none;
+        color: var(--VeryDarkBlue);
+        outline: none;
+        padding: 0;
+        width: 70%;
+        margin: 1em;
+        background-color: var(--white);
+    }
+    @media (min-width: 1024px) {
+        margin-left: 5em;
+        margin-right:5em;
+
+    }
+}
+
+.searching{
+    @media (min-width: 1024px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .filter{
+            width: 20%;
+        }
+        .Input{
+            width: 40%;
+        }
+    }
+}

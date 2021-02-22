@@ -1,0 +1,32 @@
+.header{
+    background-color: var(--white);
+    padding: 0 0 1em 0;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    @include wrapper;
+    input{
+        display: none;
+    }
+    a{
+        font-weight: 800;
+    }
+
+    .switch{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            margin: 1em;
+        }
+        p{
+            font-size: .8em;
+            font-weight: 600;
+        }
+    }
+    @media (min-width: 1024px) {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+}

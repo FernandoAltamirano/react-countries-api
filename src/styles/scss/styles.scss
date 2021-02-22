@@ -1,0 +1,65 @@
+:root{
+    --gray: hsl(0, 0%, 52%);
+    --white : white;
+    --lightGray: hsla(0, 0%, 98%, 0.979);
+    --textLightGray: hsl(0, 0%, 100%);
+    --VeryDarkBlue: hsl(200, 15%, 8%);
+    --shadow : rgb(236, 236, 236);
+    --shadow2: rgba(171, 170, 170, 0.34);
+    --border: rgb(113, 113, 221);
+}
+body{
+    background-color: var(--lightGray);
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--VeryDarkBlue);
+}
+
+@mixin wrapper {
+    padding: 1em 1.7em;
+    margin: auto;   
+
+}
+
+
+.is-light-mode{
+    --gray: hsl(0, 0%, 52%);
+    --white : white;
+    --lightGray: hsla(0, 0%, 98%, 0.979);
+    --textLightGray: hsl(0, 0%, 100%);
+    --VeryDarkBlue: hsl(200, 15%, 8%);
+    --shadow : rgb(236, 236, 236);
+    --shadow2: rgba(171, 170, 170, 0.34);
+    --border: rgb(113, 113, 221);
+}
+.is-dark-mode{
+    --gray: hsl(0, 0%, 52%);
+    --white: hsl(209, 23%, 22%);
+    --lightGray: hsl(207, 26%, 17%);
+    --VeryDarkBlue: hsl(0, 0%, 100%);
+    --shadow : hsl(207, 26%, 17%);
+    --shadow2: rgba(171, 170, 170, 0.34);
+    --border :   hsla(0, 0%, 98%, 0.979);
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --gray: hsl(0, 0%, 52%);
+        --white: hsl(209, 23%, 22%);
+        --lightGray: hsl(207, 26%, 17%);
+        --VeryDarkBlue: hsl(0, 0%, 100%);
+        --shadow : hsl(207, 26%, 17%);
+        --shadow2: rgba(171, 170, 170, 0.34);
+        --border :   hsla(0, 0%, 98%, 0.979);
+    }
+}
+  
+
+
+@import 'header';
+@import 'input';
+@import 'filter';
+@import 'card';
+@import 'description';
+@import 'loader';
